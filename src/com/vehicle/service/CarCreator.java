@@ -9,8 +9,8 @@ import java.util.Set;
 
 public class CarCreator {
 
-    public Car createCar(String make, String model, Integer year, Integer numberOfWheels, Double engine, Double price) {
-        Car created = new Car(make, model, year, numberOfWheels, engine, price);
+    public Car createCar(String make, String model, Integer year, Integer numberOfWheels, Double engine, Double price, Boolean doorOpen) {
+        Car created = new Car(make, model, year, numberOfWheels, engine, price, doorOpen);
         return created;
     }
 
@@ -18,11 +18,10 @@ public class CarCreator {
 
         List<Car> carsList = new ArrayList<>();
 
-        Car audi = new Car("Audi", "A3", 2022, 4, 1.5,300.74);
-        Car audi1 = new Car("Audi", "A3", 2022, 4, 1.5,  300.74);
-        Car audi2 = new Car("Audi", "A3", 2022, 4, 1.5, 300.74);
-        Car audi3 = new Car("Audi", "A3", 2022, 4, 1.5, 300.74);
-
+        Car audi = new Car("Audi", "A3", 2022, 4, 1.5,300.74, false);
+        Car audi1 = new Car("Audi", "A3", 2022, 4, 1.5,  300.74, false);
+        Car audi2 = new Car("Audi", "A3", 2022, 4, 1.5, 300.74, false);
+        Car audi3 = new Car("Audi", "A3", 2022, 4, 1.5, 300.74, false);
 
         carsList.add(audi);
         carsList.add(audi1);
@@ -37,10 +36,10 @@ public class CarCreator {
         Set<Car> carSet = new HashSet<>();
 
 
-        Car audi = new Car("Audi", "A3", 2022, 4, 1.5, 300.73);
-        Car audi1 = new Car("Audi", "A3", 2022, 4, 1.5, 300.73);
-        Car audi2 = new Car("Audi", "A3", 2022, 4, 1.5, 300.73);
-        Car audi3 = new Car("Audi", "A3", 2022, 4, 1.5, 300.73);
+        Car audi = new Car("Audi", "A3", 2022, 4, 1.5, 300.73, false);
+        Car audi1 = new Car("Audi", "A3", 2022, 4, 1.5, 300.73, false);
+        Car audi2 = new Car("Audi", "A3", 2022, 4, 1.5, 300.73, false);
+        Car audi3 = new Car("Audi", "A3", 2022, 4, 1.5, 300.73, false);
 
         carSet.add(audi);
         carSet.add(audi1);
