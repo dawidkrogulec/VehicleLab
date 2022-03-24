@@ -12,7 +12,7 @@ public class Main {
 
     //powtórz to samo dla motorów
     List<MotorCycle> motorCycleList = new ArrayList<>();
-    Set<MotorCycle> Set = new HashSet<>();
+    Set<MotorCycle> motorCycleSet = new HashSet<>();
 
     List<Car> carsList = new ArrayList<>();
     Set<Car> carSet = new HashSet<>();
@@ -25,6 +25,7 @@ public class Main {
         main.carsList.addAll(carCreator.returnListOfCars());
         main.carsList.add(carCreator.createCar("Skoda", "Fabia", 2019, 4, 1.2, 321.33, false));
         main.carsList.get(0).openDoor();
+        // korzystając zkreatora stworzyć pojedyńczy obiekt i wyświetluć go na ekranie
 
         main.carSet.addAll(carCreator.returnSetOfCars());
         main.carSet.add(carCreator.createCar("Skoda", "Fabia", 2019, 4, 1.2, 321.33, false));
